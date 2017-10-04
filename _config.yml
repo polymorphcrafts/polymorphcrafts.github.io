@@ -3,7 +3,7 @@
 #
 
 # GENERAL
-url: /
+url: 
 
 include: ["_pages"]
 
