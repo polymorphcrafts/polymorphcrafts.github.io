@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: polymorphcrafts/polymorphcrafts.github.io # Path to your Github repository
+  branch: master # Branch to update
+  media_folder: "assets/images"
+
+  collections:
+    - name: "products"
+      label: "Products"
+      folder: "_products"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "Body", name: "body", widget: "markdown"}
