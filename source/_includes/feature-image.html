@@ -1,0 +1,18 @@
+{% if include.image and include.text %}
+
+{% if include.link %}
+
+    <a href='{{ include.link }}' class='feature-image' style='background-image: url({{ site.url }}/assets/{{ include.image }})'>
+        <div class='feature-text feature-text-horizontal-{{ include.horizontal }} feature-text-vertical-{{ include.vertical }}'>{{ include.text }}</div>
+    </a>
+
+{% else %}
+
+    <div class='feature-image' style='background-image: url({{ site.url }}/assets/{{ include.image }})'>
+        <div class='feature-text feature-text-horizontal-{{ include.horizontal }} feature-text-vertical-{{ include.vertical }}'>{{ include.text }}</div>
+    </a>
+
+{% endif %}
+
+
+{% endif %}

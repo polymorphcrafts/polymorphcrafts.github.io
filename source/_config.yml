@@ -1,0 +1,22 @@
+#
+# SITE SETTINGS 
+#
+
+# GENERAL
+url: /pmc
+destination: ../pmc/
+
+include: ["_pages"]
+
+# SASS
+sass: 
+  sass_dir: ./_scss
+  style: compressed
+
+# DEFAULT SETTINGS PER PATH OR TYPE
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

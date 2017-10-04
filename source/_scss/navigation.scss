@@ -1,0 +1,31 @@
+
+.logo-wrapper {
+    display: block;
+    width: 100%;
+    background: #efefef;
+    text-align: center;
+}
+
+.logo {
+    
+    width: auto;
+    height: 50px;
+    margin: 15px 10px 10px 10px;
+    
+}
+
+@mixin logo-920 {
+
+    .logo-wrapper {
+        display: inline;
+        background: initial;
+        text-align: initial;
+    }
+
+    .logo {
+        position: fixed;
+        z-index: 1;
+        margin: 20px 0 0 20px;
+    }
+
+}

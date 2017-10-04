@@ -1,0 +1,84 @@
+
+.feature-image {
+    height: 60vh;
+    background-size: cover;
+    background-position: center bottom;
+    display: block;
+    text-decoration: none;
+}
+
+.feature-text {
+    color: white;
+    padding: 20px;
+    @include title-font;
+    text-transform: uppercase;
+    @include font-size( 3 );
+}
+
+.feature-text-horizontal-right {
+    text-align: right;
+}
+
+.feature-text-vertical-top {
+    top: 0;
+}
+
+.fullscreen {
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+
+    @include title-font;
+    text-transform: uppercase;
+    @include font-size( 3 );
+    text-align: center;
+    line-height: 1.25em;
+
+}
+
+.subtitle {
+
+    @include subtitle-font;
+    text-transform: uppercase;
+    @include font-size( .75 );
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.center {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    right: -9999px;
+    margin: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+.overlap {
+
+}

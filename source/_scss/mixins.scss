@@ -1,0 +1,6 @@
+
+@mixin font-size( $size ) {
+
+    font-size: calc( 10px + #{$size}vw );
+
+}
