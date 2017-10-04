@@ -3,8 +3,7 @@
 #
 
 # GENERAL
-url: /pmc
-destination: ../pmc/
+url: /
 
 include: ["_pages"]
 
