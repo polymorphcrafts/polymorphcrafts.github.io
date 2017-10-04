@@ -12,6 +12,11 @@ sass:
   sass_dir: ./_scss
   style: compressed
 
+collections:
+  products:
+    output: true
+    permalink: "/product/:title/"
+
 # DEFAULT SETTINGS PER PATH OR TYPE
 defaults:
   -
