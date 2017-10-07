@@ -1,1 +1,16 @@
 DirectoryIndex index.php index.html index.htm
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?localhost$
+
+# Change 'public' to be the primary domain
+RewriteCond %{REQUEST_URI} !^/public/
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+RewriteRule ^(.*)$ /public/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?localhost$
+RewriteRule ^(/)?$ localhost/index.html [L]
