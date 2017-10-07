@@ -16,8 +16,11 @@ collections:
       - {label: Name, name: name , widget: string}
       - {label: Featured Image, name: featured_image, widget: image}
       - {label: Body, name: body, widget: markdown}
+      - {label: Retail, name: retail, widget: number}
+      - {label: Sale, name: sale, widget: number}
       - name: customization
         label: Customization
+        required: false
         widget: list
         fields:
           - {label: Name, name: name, widget: string}
@@ -30,7 +33,8 @@ collections:
         fields:
           - name: product
             label: Product
-            widget: relations
+            required: false
+            widget: relation
             collection: products
             searchFields: [name]
             valueField: name
