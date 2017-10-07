@@ -29,11 +29,11 @@ collections:
           - {label: Surcharge, name: surcharge, widget: number}
       - name: addons
         label: addons
+        required: false
         widget: list
         fields:
           - name: product
             label: Product
-            required: false
             widget: relation
             collection: products
             searchFields: [name]
