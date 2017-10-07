@@ -3,11 +3,11 @@
 #
 
 # GENERAL
-url: 
+url: /polymorphcrafts.github.io/public
 destination: public
 
 # COMPILATION
-include: ["_pages"]
+include: ["_pages", ".htaccess"]
 
 # SASS
 sass: 
@@ -27,3 +27,38 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
+# NETLIFY CMS API
+name: github
+repo: polymorphcrafts/polymorphcrafts.github.io
+branch: master
+media_folder: "assets/images"
+
+collections:
+  - name: products
+    label: Products
+    folder: "_products"
+    create: true
+    slug: {{slug}}
+    fields:
+      - {label: Name, name: name , widget: string}
+      - {label: Featured Image, name: featured_image, widget: image}
+      - {label: Body, name: body, widget: markdown}
+      - name: customization
+        label: Customization
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Surcharge, name: surcharge, widget: number}
+      - name: addons
+        label: addons
+        widget: list
+        fields:
+          - name: product
+            label: Product
+            widget: relations
+            collection: products
+            searchFields: [name]
+            valueField: name
