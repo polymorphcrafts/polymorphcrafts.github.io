@@ -4,7 +4,6 @@
 
 # GENERAL
 url: /polymorphcrafts.github.io/public
-destination: public
 
 # COMPILATION
 include: ["_pages", ".htaccess"]
