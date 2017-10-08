@@ -38,3 +38,21 @@ collections:
             collection: products
             searchFields: [name]
             valueField: name
+  - name: pages
+    label: Pages
+    folder: "_pages"
+    create: true
+    slug: {{slug}}
+    fields:
+      - {label: Title, name: title, widget: string}
+      - name: sections
+        label: Sections
+        widget: list
+        fields:
+          - {label: Section Template,           name: template,         widget: select,   options: ["Text Block", "Image Block"]}
+          - {label: Section Height,             name: height,           widget: number,                                           required: false}
+          - {label: Background Image,           name: background_image, widget: image,                                            required: false}
+          - {label: Body,                       name: body,             widget: markdown,                                         required: false}
+          - {label: Body Width,                 name: body_width,       widget: number,                                           required: false}
+          - {label: Body Vertical Alignment,    name: vertical,         widget: select,   options: ["top", "center", "bottom"],   required: false}
+          - {label: Body Horizontal Alignment,  name: horizontal,       widget: select,   options: ["left", "center", "right"],   required: false}
