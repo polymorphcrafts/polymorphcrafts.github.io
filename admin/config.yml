@@ -2,9 +2,9 @@ backend:
   name: github
   repo: polymorphcrafts/polymorphcrafts.github.io # Path to your Github repository
   branch: master # Branch to update
-  site_domain: polymorphcrafts.netlify.com
 
-media_folder: "assets/images"
+media_folder: "/polymorphcrafts/assets/images"
+public_folder: "/polymorphcrafts/public/assets/images"
 
 collections:
   - name: products
