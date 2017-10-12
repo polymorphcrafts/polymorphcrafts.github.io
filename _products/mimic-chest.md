@@ -1,9 +1,10 @@
 ---
 name: Mimic Chest
-featured_image: /polymorphcrafts/public/assets/images/tumblr_inline_ou4b2q0Dtr1rulby5_540.gif
+featured_image: /assets/images/tumblr_owhkz3GNUH1t9x55so1_1280.jpg
 retail: 99
 ---
 tes
+
 
 
 
